@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Товары</title>
-        <link rel="stylesheet" href="../style/styles.css">
-    </head>
-    <body>
-         <div class="page-container">
-            <header class="header">
-                <h1>Товары</h1>
-            </header>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.html">Новости</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="practices.html">Практики</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="goods.html">Товары</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <main class="content">
-                <h2 class="section-title">Наши товары</h2>
-                <div class="products-grid">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page">
+    <div class="page__container">
+        <header class="header">
+            <h1 class="header__title">Товары</h1>
+        </header>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="practices.html">Практики</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link--active" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section class="section products">
+                <h2 class="section__title">Наши товары</h2>
+                <div class="products__grid">
                     <article class="product-card">
-                        <img class="product-image" src="../images/goods1.jpg" width="200" height="250" alt="Фото товара 1">
-                        <h3 class="product-name">крутая штука для трудовика</h3>
-                        <p class="product-price">3000 ₽</p>
+                        <img class="product-card__image" src="../images/goods1.jpg" width="200" height="250" alt="Фото товара 1">
+                        <h3 class="product-card__name">крутая штука для трудовика</h3>
+                        <p class="product-card__price">3000 ₽</p>
                     </article>
                     <article class="product-card">
-                        <img class="product-image" src="../images/goods2.jpg" width="200" height="250" alt="Фото товара 2">
-                        <h3 class="product-name">Фотик</h3>
-                        <p class="product-price">15000 ₽</p>
+                        <img class="product-card__image" src="../images/goods2.jpg" width="200" height="250" alt="Фото товара 2">
+                        <h3 class="product-card__name">Фотик</h3>
+                        <p class="product-card__price">15000 ₽</p>
                     </article>
                     <article class="product-card">
-                        <img class="product-image" src="../images/goods3.jpg" width="200" height="250" alt="Фото товара 3">
-                        <h3 class="product-name">яблочка с клубничкой</h3>
-                        <p class="product-price">150 ₽</p>
+                        <img class="product-card__image" src="../images/goods3.jpg" width="200" height="250" alt="Фото товара 3">
+                        <h3 class="product-card__name">яблочка с клубничкой</h3>
+                        <p class="product-card__price">150 ₽</p>
+                    </article>
+                    <article class="product-card">
+                        <img class="product-card__image" src="../images/goods4.jpg" width="200" height="250" alt="Фото товара 4">
+                        <h3 class="product-card__name">Гаджет для программиста</h3>
+                        <p class="product-card__price">95000 ₽</p>
                     </article>
                 </div>
-            </main>
-            <footer class="footer">
-                <p>2025 Сашка. Все права защищены.</p>
-            </footer>
-        </div>
-    </body>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>2025 Сашка. Все права защищены.</p>
+        </footer>
+    </div>
+    
+    <script src="../js/main.js"></script>
+</body>
 </html>

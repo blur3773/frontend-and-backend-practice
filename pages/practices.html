@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Практики</title>
-        <link rel="stylesheet" href="../style/styles.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <header class="header">
-                <h1>Практики</h1>
-            </header>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.html">Новости</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="practices.html">Практики</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="goods.html">Товары</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <main class="content">
-                <h2 class="section-title">Практические работы</h2>
-                <div class="practices-container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практики</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page">
+    <div class="page__container">
+        <header class="header">
+            <h1 class="header__title">Практики</h1>
+        </header>
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link--active" href="practices.html">Практики</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section class="section practices">
+                <h2 class="section__title">Практические работы</h2>
+                <div class="practices__container">
                     <div class="practice-card">
-                        <h3>Практика 1: Основы HTML</h3>
-                        <p>Изучение базовых тегов и структуры HTML-документа</p>
+                        <h3 class="practice-card__title">Практика 1: Основы HTML</h3>
+                        <p class="practice-card__desc">Изучение базовых тегов и структуры HTML-документа. Создание семантической разметки и форм.</p>
                     </div>
                     <div class="practice-card">
-                        <h3>Практика 2: Стилизация CSS</h3>
-                        <p>Работа с каскадными таблицами стилей и селекторами</p>
+                        <h3 class="practice-card__title">Практика 2: Стилизация CSS</h3>
+                        <p class="practice-card__desc">Работа с каскадными таблицами стилей и селекторами. Flexbox и Grid layouts.</p>
                     </div>
                     <div class="practice-card">
-                        <h3>Практика 3: Адаптивный дизайн</h3>
-                        <p>Создание отзывчивой верстки для разных устройств</p>
+                        <h3 class="practice-card__title">Практика 3: Адаптивный дизайн</h3>
+                        <p class="practice-card__desc">Создание отзывчивой верстки для разных устройств. Media queries и mobile-first подход.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3 class="practice-card__title">Практика 4: JavaScript основы</h3>
+                        <p class="practice-card__desc">Изучение переменных, функций, событий и DOM manipulation.</p>
                     </div>
                 </div>
-            </main>
-            <footer class="footer">
-                <p>2025 Сашка. Все права защищены.</p>
-            </footer>
-        </div>
-    </body>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>2025 Сашка. Все права защищены.</p>
+        </footer>
+    </div>
+    
+    <script src="../js/main.js"></script>
+</body>
 </html>
