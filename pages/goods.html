@@ -1,71 +1,140 @@
+<!-- pages/goods.html - исправляем названия товаров -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Товары</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Товары - Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body class="page">
-    <div class="page__container">
-        <header class="header">
-            <h1 class="header__title">Товары</h1>
+<body class="bg-light">
+    <div class="container-fluid p-0">
+        <header class="bg-primary text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="h3 mb-1">Товары</h1>
+                        <p class="mb-0 opacity-75">Каталог наших товаров</p>
+                    </div>
+                </div>
+            </div>
         </header>
-        
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a class="nav__link" href="../index.html">Главная</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="news.html">Новости</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="practices.html">Практики</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link nav__link--active" href="goods.html">Товары</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="contacts.html">Контакты</a>
-                </li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="practices.html">Практики</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="goods.html">Товары</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-        <main class="content">
-            <section class="section products">
-                <h2 class="section__title">Наши товары</h2>
-                <div class="products__grid">
-                    <article class="product-card">
-                        <img class="product-card__image" src="../images/goods1.jpg" width="200" height="250" alt="Фото товара 1">
-                        <h3 class="product-card__name">крутая штука для трудовика</h3>
-                        <p class="product-card__price">3000 ₽</p>
-                    </article>
-                    <article class="product-card">
-                        <img class="product-card__image" src="../images/goods2.jpg" width="200" height="250" alt="Фото товара 2">
-                        <h3 class="product-card__name">Фотик</h3>
-                        <p class="product-card__price">15000 ₽</p>
-                    </article>
-                    <article class="product-card">
-                        <img class="product-card__image" src="../images/goods3.jpg" width="200" height="250" alt="Фото товара 3">
-                        <h3 class="product-card__name">яблочка с клубничкой</h3>
-                        <p class="product-card__price">150 ₽</p>
-                    </article>
-                    <article class="product-card">
-                        <img class="product-card__image" src="../images/goods4.jpg" width="200" height="250" alt="Фото товара 4">
-                        <h3 class="product-card__name">Гаджет для программиста</h3>
-                        <p class="product-card__price">95000 ₽</p>
-                    </article>
+        <main class="container my-4">
+            <section class="mb-5">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-light">
+                        <h3 class="card-title h5 mb-0">Наши товары</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card h-100 product-card">
+                                    <img src="../images/goods1.jpg" class="card-img-top" alt="Крутая штука для трудовика" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Крутая штука для трудовика</h5>
+                                        <p class="card-text small text-muted">
+                                            Уникальное устройство для технического творчества и проектов.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-danger mb-0">3000 ₽</span>
+                                            <button class="btn btn-primary btn-sm">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card h-100 product-card">
+                                    <img src="../images/goods2.jpg" class="card-img-top" alt="Фотик" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Фотик</h5>
+                                        <p class="card-text small text-muted">
+                                            Профессиональная камера для качественной съемки и творчества.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-danger mb-0">15000 ₽</span>
+                                            <button class="btn btn-primary btn-sm">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card h-100 product-card">
+                                    <img src="../images/goods3.jpg" class="card-img-top" alt="Яблочка с клубничкой" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Яблочка с клубничкой</h5>
+                                        <p class="card-text small text-muted">
+                                            Свежие фрукты премиум качества для здорового питания.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-danger mb-0">150 ₽</span>
+                                            <button class="btn btn-primary btn-sm">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card h-100 product-card">
+                                    <img src="../images/goods4.jpg" class="card-img-top" alt="Гаджет для программиста" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Гаджет для программиста</h5>
+                                        <p class="card-text small text-muted">
+                                            Современное устройство для комфортной работы программиста.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="h5 text-danger mb-0">95000 ₽</span>
+                                            <button class="btn btn-primary btn-sm">В корзину</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <footer class="footer">
-            <p>2025 Сашка. Все права защищены.</p>
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2025 Изосимов Максим. Все права защищены.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                        <a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
-    
-    <script src="../js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>
